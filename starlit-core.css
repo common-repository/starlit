@@ -1,0 +1,44 @@
+:root {
+  --plugin-carb-text-color: rgba(0, 0, 0, .6);
+  --plugin-carb-1: #c1e7f1;
+  --plugin-carb-2: #c1f1d1;
+  --plugin-carb-3: #fdf5c5;
+  --plugin-carb-4: #fdd8c5;
+  --plugin-carb-5: #e8e8e8;
+}
+
+.starlit-comment-author-role-badge {
+  display: inline-block;
+  padding: 3px 6px;
+  margin-left: .5em;
+  margin-right: .5em;
+  background: #e8e8e8;
+  border-radius: 2px;
+  color: var(--plugin-carb-text-color);
+  font-size: .75rem;
+  font-weight: normal;
+  text-transform: none;
+  text-align: left;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.widget .starlit-comment-author-role-badge {
+  display: none;
+}
+
+.starlit-comment-author-role-badge--administrator { background: var(--plugin-carb-1); }
+.starlit-comment-author-role-badge--contributor   { background: var(--plugin-carb-2); }
+.starlit-comment-author-role-badge--author        { background: var(--plugin-carb-3); }
+.starlit-comment-author-role-badge--editor        { background: var(--plugin-carb-4); }
+.starlit-comment-author-role-badge--subscriber    { background: var(--plugin-carb-5); }
+
+/*
+ * Install the following plugin to enable this feature
+ *
+ * @link https://wordpress.org/plugins/current-theme-body-class/
+ */
+.current-theme--twentytwelve .comments-area .bypostauthor cite span {
+  display: none;
+}
